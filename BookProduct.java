@@ -1,12 +1,15 @@
 public class BookProduct extends Product {
-  String author, publisher;
+  // attributes
+  private String author, publisher;
 
+  // constructor
   public BookProduct(int productID, String name, float price, String author, String publisher) {
     super(productID, name, price);
     this.author = author;
     this.publisher = publisher;
   }
 
+  // getters and setters
   public String getAuthor() {
     return author;
   }

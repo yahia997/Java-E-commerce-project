@@ -1,8 +1,8 @@
 public class ElectronicProduct extends Product {
   // attributes
   // productID, name, price from "Product" class
-  String brand;
-  int warrantyPeriod;// positive else take absolute
+  private String brand;
+  private int warrantyPeriod;// positive else take absolute
 
   // methods
 
@@ -10,7 +10,7 @@ public class ElectronicProduct extends Product {
   public ElectronicProduct(int productID, String name, float price, String brand, int warrantyPeriod) {
     super(productID, name, price);
     this.brand = brand;
-    this.warrantyPeriod = warrantyPeriod;
+    this.warrantyPeriod = Math.abs(warrantyPeriod);
   }
 
   // getter & setter
@@ -22,12 +22,10 @@ public class ElectronicProduct extends Product {
     return warrantyPeriod;
   }
 
-  public boolean setBrand(String newBrand) {
+  public void setBrand(String newBrand) {
     brand = newBrand;
-    return true;
   }
-  public boolean setWarrantyPeriod(int newWarrantyPeriod) {
+  public void setWarrantyPeriod(int newWarrantyPeriod) {
     warrantyPeriod = Math.abs(newWarrantyPeriod);
-    return true;
   }
 }

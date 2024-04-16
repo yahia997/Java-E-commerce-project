@@ -1,13 +1,16 @@
 public class Cart {
-  public int customerId, nProducts, lastIndex = 0;
-  public Product[] products;
+  // attributes
+  private int customerId, nProducts;
+  private Product[] products;
 
+  // constructor
   public Cart(int customerId, int nProducts) {
-    this.customerId = customerId;
-    this.nProducts = nProducts;
+    this.customerId = Math.abs(customerId); // to take absolute value 
+    this.nProducts = Math.abs(nProducts); // to take absolute value 
     products = new Product[nProducts];
   }
 
+  // getters and setters
   public int getCustomerId() {
     return customerId;
   }
@@ -18,17 +21,14 @@ public class Cart {
     return products;
   }
   
-  public boolean setCustomerId(int newCustomerId) {
-    customerId = newCustomerId;
-    return true;
+  public void setCustomerId(int newCustomerId) {
+    customerId = Math.abs(newCustomerId);
   }
-  public boolean setNProducts(int newNProducts) {
-    nProducts = newNProducts;
-    return true;
+  public void setNProducts(int newNProducts) {
+    nProducts = Math.abs(newNProducts);
   }
-  public boolean setProducts(Product[] newProducts) {
+  public void setProducts(Product[] newProducts) {
     products = newProducts;
-    return true;
   }
 
   public void addProduct(Product p) {

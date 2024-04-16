@@ -1,12 +1,15 @@
 public class ClothingProduct extends Product {
-  String size, fabric;
+  // attributes
+  private String size, fabric;
 
+  // constructor
   public ClothingProduct(int productID, String name, float price, String size, String fabric) {
     super(productID, name, price);
     this.size = size;
     this.fabric = fabric;
   }
 
+  // getters and setters
   public String getSize() {
     return size;
   }

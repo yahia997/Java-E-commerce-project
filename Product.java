@@ -1,8 +1,8 @@
 public class Product {
   // attributes
-  int productID; // positive else take absolute
-  String name;
-  float price; // positive else take absolute
+  private int productID; // positive else take absolute
+  private String name;
+  private float price; // positive else take absolute
   
   // methods
 
@@ -24,16 +24,13 @@ public class Product {
     return price;
   }
 
-  public boolean setProductId(int newId) {
+  public void setProductId(int newId) {
     productID = Math.abs(newId);
-    return true;
   }
-  public boolean setName(String newName) {
+  public void setName(String newName) {
     name = newName;
-    return true;
   }
-  public boolean setPrice(float newPrice) {
+  public void setPrice(float newPrice) {
     price = Math.abs(newPrice);
-    return true;
   }
 }

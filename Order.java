@@ -9,12 +9,12 @@ import javax.swing.border.EmptyBorder;
 public class Order {
 
   // attributes
-  int customerId;
-  float totalPrice;
-  Product[] products;
+  private int customerId;
+  private float totalPrice;
+  private Product[] products;
 
   // order id is starting from 1 and increases by one when you place an order to be unique
-  static int orderId = 1;
+  private static int orderId = 1;
 
   // for GUI
   JFrame detailsFrame;
@@ -30,7 +30,7 @@ public class Order {
     // open new window with order details
     detailsFrame = new JFrame("Order detials");
 
-    // show details once you place the order
+    // show details once you click place order button
     printOrderInfo();
 
     detailsFrame.setVisible(true);

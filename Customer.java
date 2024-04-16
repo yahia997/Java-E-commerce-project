@@ -1,8 +1,8 @@
 public class Customer {
   // attributes
-  int customerID; // positive else take absolute
-  String name;
-  String address;
+  private int customerID; // positive else take absolute
+  private String name;
+  private String address;
 
   // methods
 
@@ -24,16 +24,13 @@ public class Customer {
     return address;
   }
 
-  public boolean setCustomerId(int newId) {
+  public void setCustomerId(int newId) {
     customerID = Math.abs(newId);
-    return true;
   }
-  public boolean setName(String newName) {
+  public void setName(String newName) {
     name = newName;
-    return true;
   }
-  public boolean setAddress(String newAddress) {
+  public void setAddress(String newAddress) {
     address = newAddress;
-    return true;
   }
 }

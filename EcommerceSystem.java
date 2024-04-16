@@ -1,3 +1,5 @@
+// This file contains most of GUI and objects
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
@@ -7,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class EcommerceSystem implements ActionListener {
-  // content for GUI
+  // content for GUI (to make it global as we can access it in any function in the class)
 
   // Frames
   JFrame starterFrame, contentFrame;
@@ -48,6 +50,7 @@ public class EcommerceSystem implements ActionListener {
     new ClothingProduct(11, "socks", 99.99f, "44", "cotton"),
   };
 
+  // constructor (initalizes GUI)
   public EcommerceSystem() {
     // create customer window GUI
     createUser = new JPanel();
@@ -284,6 +287,7 @@ public class EcommerceSystem implements ActionListener {
     }
   }
 
+  // renders cart UI
   public void updateCart() {
     // to remove old UI
     cartPanel.removeAll(); 
@@ -308,7 +312,7 @@ public class EcommerceSystem implements ActionListener {
       // to check if product is not removed from cart
       if(products[i] != null) {
 
-        final int index = i;// as to not generate an error
+        final int index = i; // as to not generate an error
 
         JPanel product = new JPanel();
         product.setLayout(new GridLayout(2, 2));
