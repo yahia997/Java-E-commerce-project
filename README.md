@@ -14,3 +14,5 @@ their interactions with customers. The project consists of the following classes
 - Cart
 - Order
 - EcommerceSystem (contains main method)
+
+Users can create a customer with his/her ID, name, address and number of products. Any customer can add or remove products and when he click place order button the app will open new window which contains information about the order.
