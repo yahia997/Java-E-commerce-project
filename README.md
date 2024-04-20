@@ -1,5 +1,6 @@
 # Simple E-commerce desktop app
 ### Technologies:
+- ![Java](https://img.shields.io/badge/Java-%2320232a.svg?style=for-the-badge&logo=Java&logoColor=%2361DAFB)
 - ![Java Swing](https://img.shields.io/badge/Java-Swing-%2320232a.svg?style=for-the-badge&logo=Java-Swing&logoColor=%2361DAFB)
 
 ### description of the project
