@@ -13,4 +13,4 @@ their interactions with customers. The project consists of the following classes
 - Customer
 - Cart
 - Order
-- EcommerceSystem
+- EcommerceSystem (contains main method)
